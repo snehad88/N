@@ -4,14 +4,16 @@ import requests
 app = Flask(__name__)
 
 # Replace these with your actual Nutritionix API credentials
-API_KEY = '87793ca39cbdb7c22b3a6d6e33687434'
-APP_ID = '838cd12c'
+# API_KEY = '87793ca39cbdb7c22b3a6d6e33687434'
+# APP_ID = '838cd12c'
+API_KEY = '2zIkt9vtN59ujZXf15AMKg==4XLLBlXLWJkPACmu'
+
 
 def get_nutrition_data(food_item):
     url = "https://trackapi.nutritionix.com/v2/natural/nutrients"
     
     headers = {
-        "x-app-id": APP_ID,
+        #"x-app-id": APP_ID,
         "x-app-key": API_KEY,
         "Content-Type": "application/json"
     }
