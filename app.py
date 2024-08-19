@@ -11,7 +11,7 @@ def get_nutrition_data(food_item):
     url = "https://trackapi.nutritionix.com/v2/natural/nutrients"
     
     headers = {
-        #"x-app-id": APP_ID,
+        "x-app-id": APP_ID,
         "x-app-key": API_KEY,
         "Content-Type": "application/json"
     }
